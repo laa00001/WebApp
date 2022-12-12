@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Camp Land</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" >
+		<link rel="stylesheet" type="text/css" href="assets/css/autoslid.css" > 
+		
+		
+		<!-- A javascript that runs the slider show on the product page -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+			<script>
+				$(function() {
+		
+							$(".slider > div:gt(0)").hide();
+	
+				setInterval(function() { 
+										  $('.slider > div:first')
+				   							 .fadeOut(1000)
+			    							.next()
+			    							.fadeIn(1000)
+			   								 .end()
+			   								 .appendTo('.slider');
+											},  4000);
+			
+											});
+		
+			</script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+				<!-- Header -->
+				<div id="header">
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li class="current"><a href="product.html">Product</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-narrower">
+								<div id="sidebar">
+									Product
+								</div>
+							</div>
+							<div class="col-8  col-12-narrower imp-narrower">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header>
+												<h2>Our Products</h2>
+												<p>If you are out to sort after the best outdoor adventure, CampLand has got you covered. </p>
+											</header>
+
+																					
+											<div class="slider">
+						
+												<div>
+													 <img src="images/sc1.jpg" alt="" height="425" width="575">
+												 </div>
+												<div>
+														<img src="images/sm1.jpg" alt="" height="425" width="575">
+												 </div>
+												 <div>
+														<img src="images/if.jpg" alt="" height="425" width="575">
+												 </div>
+												   						 
+											</div>
+
+											<h3><Br>We offer the best outdoor adventures</h3>
+											<ul>
+											<li id="list1">Survival Camp</li>
+											<li id="list2">Snowmobile Safaris</li>
+											<li id="list3">Ice Fishing Trip</li>
+											
+											</ul>
+
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		</div>
+	</body>
+</html>
